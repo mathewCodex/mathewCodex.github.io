@@ -24,6 +24,7 @@ let letter = " ";
 //     index = 0;
 //   }
 //   setTimeout(type, 400);
+
 // })();
 const wait = function (seconds) {
   return new Promise(function (resolve) {

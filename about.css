@@ -53,7 +53,7 @@ html {
 
   /* Create the parallax scrolling effect */
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("./img/road2.JPG") center/cover no-repeat fixed;
+    url("road2.JPG") center/cover no-repeat fixed;
   /* background-attachment: fixed; */
   /* background-position: center;
   background-repeat: no-repeat;
@@ -76,7 +76,7 @@ html {
 /* End of first Parallax */
 .parallax2 {
   /* The image used */
-  background-image: url("./img/team\ \(2\).JPG");
+  background-image: url("team\ \(2\).JPG");
 
   /* Full height */
   height: 50%;
@@ -90,7 +90,7 @@ html {
 
 .parallax3 {
   /* The image used */
-  background-image: url("./img/chess.JPG");
+  background-image: url("chess.JPG");
 
   /* Full height */
   height: 50%;
@@ -103,7 +103,7 @@ html {
 }
 .parallax4 {
   /* The image used */
-  background-image: url("./img/night.PNG");
+  background-image: url("night.PNG");
 
   /* Full height */
   height: 50%;
@@ -116,7 +116,7 @@ html {
 }
 .parallax5 {
   /* The image used */
-  background-image: url("./img/scrapers.JPG");
+  background-image: url("scrapers.JPG");
 
   /* Full height */
   height: 60%;
@@ -129,7 +129,7 @@ html {
 }
 .parallax5 {
   /* The image used */
-  background-image: url("./img/team\ \(3\).JPG");
+  background-image: url("team\ \(3\).JPG");
 
   /* Full height */
   height: 60%;
