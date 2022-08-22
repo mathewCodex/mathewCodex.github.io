@@ -49,8 +49,8 @@ html {
   /* background-image: url("./img/road2.JPG"); */
 
   /* Full height */
-  height: 50%;
-
+  height: 50vh;
+  width: 100vw;
   /* Create the parallax scrolling effect */
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("road2.JPG") center/cover no-repeat fixed;
@@ -58,6 +58,45 @@ html {
   /* background-position: center;
   background-repeat: no-repeat;
   background-size: cover; */
+}
+@media (max-width: 70em) {
+  .parallax {
+    width: 100%;
+    object-fit: cover;
+    height: 17rem;
+  }
+  .parallax2 {
+    /* width: 96vw;
+    height: 30vh;
+
+    object-fit: contain; */
+    object-fit: cover;
+    height: 17rem;
+  }
+  .parallax3 {
+    /* width: 96vw;
+    height: 30vh;
+
+    object-fit: contain; */
+    object-fit: cover;
+    height: 17rem;
+  }
+  .parallax4 {
+    /* width: 96vw;
+    height: 30vh;
+
+    object-fit: contain; */
+    object-fit: cover;
+    height: 17rem;
+  }
+  .parallax5 {
+    /* width: 96vw;
+    height: 30vh;
+
+    object-fit: contain; */
+    object-fit: cover;
+    height: 17rem;
+  }
 }
 .parallax {
   position: relative;

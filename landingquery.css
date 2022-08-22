@@ -252,6 +252,7 @@
     border: 10px solid #0e0a08;
     margin-right: 30px;
     margin-top: 2rem;
+    object-fit: cover;
   }
   .column1 {
     display: none;
