@@ -45,57 +45,41 @@ html {
   border-bottom-right-radius: 20%;
 }
 .parallax {
-  /* The image used */
-  /* background-image: url("./img/road2.JPG"); */
+  display: none;
 
-  /* Full height */
   height: 50vh;
   width: 100vw;
   /* Create the parallax scrolling effect */
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("road2.JPG") center/cover no-repeat fixed;
-  /* background-attachment: fixed; */
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
 }
-@media (max-width: 70em) {
+.phone-image-view {
+  display: none;
+}
+@media screen and (max-width: 600px) {
   .parallax {
-    width: 100%;
+    background: url("road2.JPG");
+    background-position: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
     object-fit: cover;
-    height: 17rem;
+    width: 100%;
+  }
+  .phone-image-view {
+    display: block;
   }
   .parallax2 {
-    /* width: 96vw;
-    height: 30vh;
-
-    object-fit: contain; */
-    object-fit: cover;
-    height: 17rem;
+    display: none;
   }
   .parallax3 {
-    /* width: 96vw;
-    height: 30vh;
-
-    object-fit: contain; */
-    object-fit: cover;
-    height: 17rem;
+    display: none;
   }
   .parallax4 {
-    /* width: 96vw;
-    height: 30vh;
-
-    object-fit: contain; */
-    object-fit: cover;
-    height: 17rem;
+    display: none;
   }
   .parallax5 {
-    /* width: 96vw;
-    height: 30vh;
-
-    object-fit: contain; */
-    object-fit: cover;
-    height: 17rem;
+    display: none;
   }
 }
 .parallax {
@@ -126,7 +110,6 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .parallax3 {
   /* The image used */
   background-image: url("chess.JPG");
@@ -155,19 +138,6 @@ html {
 }
 .parallax5 {
   /* The image used */
-  background-image: url("scrapers.JPG");
-
-  /* Full height */
-  height: 60%;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.parallax5 {
-  /* The image used */
   background-image: url("team\ \(3\).JPG");
 
   /* Full height */
@@ -179,6 +149,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 /* Global styles.. */
 .writeUps {
   height: auto;
@@ -204,7 +175,7 @@ html {
   border-radius: 50%;
   float: right;
   width: 200px;
-  height: auto;
+  height: 200px;
 }
 .summaryText {
   color: gray;

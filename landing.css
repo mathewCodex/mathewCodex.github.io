@@ -145,7 +145,8 @@ p {
 }
 /* Intro section */
 .darkness {
-  background: linear-gradient(to right, #529a8b79, #0e0a08);
+  /* background: linear-gradient(to right, #529a8b79, #0e0a08); */
+  background: #62777f;
   height: 40rem;
 }
 .icon-code {
@@ -171,7 +172,8 @@ p {
 }
 .hello {
   /* color: whitesmoke; */
-  color: rgb(15, 129, 104);
+  /* color: rgb(15, 129, 104); */
+  color: rgb(22, 45, 40);
   margin: 20px;
   position: absolute;
   margin-top: 12rem;
@@ -179,7 +181,8 @@ p {
 .typing {
   /* position: relative; */
   /* color: rgb(149, 137, 115); */
-  color: rgb(34, 59, 55);
+  /* color: rgb(34, 75, 55); */
+  color: rgb(7, 9, 8);
   font-size: 1rem;
   background-size: 20px;
   /* margin-top: 17rem; */
@@ -190,7 +193,7 @@ p {
 }
 .typing1 {
   /* color: whitesmoke; */
-  color: wheat;
+  color: whitesmoke;
   font-size: 2rem;
   background-size: 20px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -236,12 +239,13 @@ em.line {
   justify-content: flex-end;
 }
 .my-face {
-  width: 10%;
-  height: auto;
-  border-radius: 40%;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 10%;
   /* border: 10px solid #0e0a08; */
   margin-right: 30px;
   margin-top: 2rem;
+  object-fit: contain;
 }
 /* End of intro section */
 .intro {
@@ -632,7 +636,7 @@ hr:hover {
 }
 /* Stacked images section  */
 .team-section {
-  background-color: #a3dac8;
+  background-color: #a5c4ba;
   height: 70vmin;
 }
 .team {

@@ -3,12 +3,19 @@
 /* media for min-width: 1200px */
 @media screen and (max-width: 1500px) {
   .my-face {
-    width: 25%;
+    /* width: 25%;
     height: auto;
     border-radius: 40%;
     border: none;
     margin-right: 30px;
-    margin-top: 2rem;
+    margin-top: 2rem; */
+    display: flex;
+    margin-right: 30px;
+    border-radius: 15%;
+    float: right;
+    width: 30vw;
+    height: 20vw;
+    object-fit: contain;
   }
   img.imgContainer {
     /* transform: translateX(60%); */
@@ -105,7 +112,8 @@
   .typing {
     font-size: 15px;
     background-size: 20px;
-    color: rgb(28, 48, 45);
+    /* color: rgb(28, 48, 45); */
+    color: rgb(7, 9, 8);
     /* margin-left: 10px; */
   }
   span.bars {
@@ -171,6 +179,8 @@
     text-align: center;
     line-height: 70px;
     font-size: 20px;
+
+    color: #787777;
   }
   .containerStack {
     display: grid;
@@ -178,19 +188,53 @@
     justify-content: center;
     align-items: center;
     height: 40vw;
-    margin: 100px;
+    margin: -10px;
+    transform: translateY(-2%);
   }
   .containerStack > img {
     grid-area: stack;
   }
   .containerStack > img {
-    width: 100px;
-    height: 100px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     object-fit: contain;
   }
+  .containerStack > img {
+    --n-angle: calc(-1 * var(--angle));
+
+    transform: rotate(var(--angle)) translateX(130px) rotate(var(--n-angle));
+  }
 
   /* end of stack images query */
+}
+@media screen and (max-width: 1000px) {
+  .team > div {
+    color: #787777;
+  }
+  .containerStack {
+    display: grid;
+    grid-template-areas: "stack";
+    justify-content: center;
+    align-items: center;
+    height: 40vw;
+    margin: -10px;
+    transform: translateY(20%);
+  }
+  .containerStack > img {
+    grid-area: stack;
+  }
+  .containerStack > img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: contain;
+  }
+  .containerStack > img {
+    --n-angle: calc(-1 * var(--angle));
+
+    transform: rotate(var(--angle)) translateX(120px) rotate(var(--n-angle));
+  }
 }
 /* previously 550 */
 @media screen and (max-width: 580px) {
@@ -225,14 +269,16 @@
     font-family: "Courier New", Courier, monospace;
   }
   .hello {
-    color: rgb(9, 68, 55);
+    /* color: rgb(7, 9, 8); */
+    color: rgb(22, 45, 40);
     margin-left: 10px;
     margin-top: 12rem;
   }
   .typing {
     font-size: 15px;
     background-size: 20px;
-    color: rgb(48, 161, 144);
+    /* color: rgb(129, 205, 189); */
+    color: rgb(7, 9, 8);
     margin-left: 10px;
   }
 
@@ -246,13 +292,21 @@
   }
 
   .my-face {
-    width: 25%;
+    /* width: 25%;
     height: auto;
     border-radius: 40%;
     border: 10px solid #0e0a08;
     margin-right: 30px;
     margin-top: 2rem;
-    object-fit: cover;
+    object-fit: cover; */
+    display: flex;
+    margin-right: 30px;
+    border-radius: 10%;
+    float: right;
+    width: 30vw;
+    height: 40vw;
+    object-fit: contain;
+    /* height: 200px; */
   }
   .column1 {
     display: none;
@@ -307,6 +361,7 @@
   }
   .meet {
     font-size: 15px;
+    margin-top: 30px;
   }
   .containerStack {
     display: grid;
@@ -315,9 +370,9 @@
     align-items: center;
 
     /* height: 20vw; */
-    margin-left: 8em;
+    margin-left: -1em;
     padding: 10px;
-    transform: translateY(-2rem);
+    transform: translateY(-1em);
   }
   .containerStack > img {
     grid-area: stack;
@@ -326,12 +381,13 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    margin: 160px;
     object-fit: fill;
   }
   .containerStack > img {
     --n-angle: calc(-1 * var(--angle));
 
-    transform: rotate(var(--angle)) translateX(80px) rotate(var(--n-angle));
+    transform: rotate(var(--angle)) translateX(100px) rotate(var(--n-angle));
   }
 
   /* end of stack images query */
@@ -467,7 +523,44 @@
     /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
   }
 }
+@media screen and (max-width: 360px) {
+  .nav__link {
+    /* display: inline; */
 
+    font-size: 7px;
+  }
+  .meet {
+    font-size: 15px;
+
+    margin-top: 25px;
+  }
+  .containerStack {
+    display: grid;
+    grid-template-areas: "stack";
+    justify-content: center;
+    align-items: center;
+
+    /* height: 20vw; */
+    margin-left: -1em;
+    padding: 10px;
+    transform: translateY(-3.5em);
+  }
+  .containerStack > img {
+    grid-area: stack;
+  }
+  .containerStack > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 150px;
+    object-fit: fill;
+  }
+  .containerStack > img {
+    --n-angle: calc(-1 * var(--angle));
+
+    transform: rotate(var(--angle)) translateX(100px) rotate(var(--n-angle));
+  }
+}
 @media screen and (min-width: 1500px) {
   .row1 {
     display: none;
@@ -543,10 +636,36 @@
   .card3:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
+  .containerStack {
+    display: grid;
+    grid-template-areas: "stack";
+    justify-content: center;
+    align-items: center;
+
+    /* height: 20vw; */
+    margin-left: -1em;
+    padding: 10px;
+    transform: translateY(1.5em);
+  }
+  .containerStack > img {
+    grid-area: stack;
+  }
+  .containerStack > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 150px;
+    object-fit: fill;
+  }
+  .containerStack > img {
+    --n-angle: calc(-1 * var(--angle));
+
+    transform: rotate(var(--angle)) translateX(160px) rotate(var(--n-angle));
+  }
 }
 @media screen and (min-width: 2200px) {
   .hello {
-    color: rgb(15, 129, 104);
+    color: rgb(22, 45, 40);
     margin-left: 130px;
     position: absolute;
     margin-top: 12rem;
@@ -556,7 +675,7 @@
   }
   .typing {
     /* position: relative; */
-    color: rgb(34, 59, 55);
+    color: rgb(7, 9, 8);
     font-size: 2rem;
     background-size: 20px;
     /* margin-top: 17rem; */
@@ -572,7 +691,7 @@
     letter-spacing: 1rem;
   }
   .typing1 {
-    color: wheat;
+    color: whitesmoke;
     font-size: 1.5rem;
     background-size: 20px;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -582,12 +701,17 @@
     transition: 1s ease-in;
   }
   .my-face {
-    width: 10%;
+    /* width: 10%;
     height: auto;
     border-radius: 40%;
     border: transparent;
     margin-right: 30px;
-    margin-top: 2rem;
+    margin-top: 2rem; */
+    display: flex;
+    margin-right: 30px;
+    border-radius: 10%;
+    float: right;
+    width: 10%;
   }
   .row1 {
     display: none;
